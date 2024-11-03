@@ -1,0 +1,73 @@
+/* src/components/File.css */
+
+.file-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .file-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .file-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .file-container th, .file-container td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .file-container th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .file-container .download-button,
+  .file-container .open-button,
+  .file-container .delete-button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+  
+  .file-container .download-button {
+    background-color: #008CBA;
+    color: white;
+  }
+  
+  .file-container .open-button {
+    background-color: #FFA500;
+    color: white;
+  }
+  
+  .file-container .delete-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .file-container .download-button:hover {
+    background-color: #007BB5;
+  }
+  
+  .file-container .open-button:hover {
+    background-color: #e69500;
+  }
+  
+  .file-container .delete-button:hover {
+    background-color: #d32f2f;
+  }
+  

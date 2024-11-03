@@ -1,0 +1,50 @@
+/* src/components/UserList/UserList.css */
+.user-list {
+    padding: 20px;
+  }
+  
+  .user-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-list th, .user-list td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  .user-list th {
+    background-color: #f4f4f4;
+  }
+
+  /* src/components/UserList/UserList.css */
+.user-list .add-button {
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .user-list .edit-button,
+  .user-list .delete-button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .user-list .edit-button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+  }
+  
+  .user-list .delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+  }
+  
+  

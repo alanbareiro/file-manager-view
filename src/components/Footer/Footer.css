@@ -1,0 +1,15 @@
+/* src/components/Footer/Footer.css */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+
+  
+  .footer p{
+    font-style: italic;
+  }

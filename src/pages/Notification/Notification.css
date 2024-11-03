@@ -1,0 +1,31 @@
+/* src/pages/Notification/Notification.css */
+.notification {
+    padding: 20px;
+  }
+  
+  .notification-list {
+    margin-top: 20px;
+  }
+  
+  .notification-item {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .notification-message {
+    font: weight 5px;
+    margin-right: 10px;
+  }
+  
+  .notification-date {
+    font-size: 0.8em;
+    color: #666;
+    margin: 2px;
+  }
+  

@@ -1,0 +1,29 @@
+/* src/components/MainLayout/MainLayout.css */
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .content-area {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .sidebar {
+    flex-shrink: 0;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 250px; /* Ajusta el contenido principal para dejar espacio al sidebar */
+    background-color: #f0f2f5;
+  }
+
+  .content1 {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f0f2f5;
+  }
+  

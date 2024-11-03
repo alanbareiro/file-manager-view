@@ -1,0 +1,73 @@
+/* src/components/EditUser.css */
+
+.edit-user {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edit-user h3 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .edit-user label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0 5px;
+  }
+  
+  .edit-user input[type="text"],
+  .edit-user input[type="email"],
+  .edit-user input[type="password"],
+  .edit-user select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .edit-user select {
+    cursor: pointer;
+  }
+  
+  .edit-user button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-user button:hover {
+    background-color: #45A049;
+  }
+  
+  .edit-user p {
+    text-align: center;
+    font-size: 1em;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .edit-user p.success {
+    color: #4CAF50;
+  }
+  
+  .edit-user p.error {
+    color: #f44336;
+  }
+  

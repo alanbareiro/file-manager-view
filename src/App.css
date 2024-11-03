@@ -1,0 +1,25 @@
+/* src/assets/styles/global.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  color: #333333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-links {
+    display:none
+  }
+
+  .navbar-links li {
+    margin: 0.5rem 0;
+  }
+}
