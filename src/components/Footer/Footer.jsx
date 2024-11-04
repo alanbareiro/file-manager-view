@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="footer">
       <p>&copy; 2024 File-Manager. Todos los derechos reservados.</p>
-      <p> By Alan Bareiro.</p>
+      <p className='boss'> by Alan Bareiro.</p>
     </footer>
   );
 }

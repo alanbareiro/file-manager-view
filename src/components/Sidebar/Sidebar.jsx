@@ -1,38 +1,47 @@
 // src/components/Sidebar/Sidebar.jsx
-import React from 'react';
-import { FaUserCog, FaFileAlt, FaKey, FaUserPlus, FaUserEdit, FaUserTimes, FaFileUpload, FaTrash, FaUser, FaFile } from 'react-icons/fa';
+import React, { useState } from 'react';
+import { FaUser, FaFile, FaFileUpload, FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import './Sidebar.css'; // Crea un archivo CSS para darle estilo al sidebar
+import './Sidebar.css';
 
 const Sidebar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="sidebar">
-      <h2>Gestión de Usuarios</h2>
-      <ul>
-        <li>
-          <Link to="/user">
-            <FaUser className="icon" /> Ver Usuarios
-          </Link>
-        </li>
+    <>
+      <button className="hamburger" onClick={toggleSidebar}>
+        <FaBars />
+      </button>
 
-      </ul>
+      <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+        <h2>Gestión de Usuarios</h2>
+        <ul>
+          <li>
+            <Link to="/user" onClick={() => setIsOpen(false)}>
+              <FaUser className="icon" /> Ver Usuarios
+            </Link>
+          </li>
+        </ul>
 
-      <h2>Gestión de Archivos</h2>
-      <ul>
-        <li>
-          <Link to="/file">
-            <FaFile className="icon" /> Ver Archivos
-          </Link>
-        </li>
-        <li>
-          <Link to="/file/upload">
-            <FaFileUpload className="icon" /> Subir Archivo
-          </Link>
-        </li>
-
-
-      </ul>
-    </div>
+        <h2>Gestión de Archivos</h2>
+        <ul>
+          <li>
+            <Link to="/file" onClick={() => setIsOpen(false)}>
+              <FaFile className="icon" /> Ver Archivos
+            </Link>
+          </li>
+          <li>
+            <Link to="/file/upload" onClick={() => setIsOpen(false)}>
+              <FaFileUpload className="icon" /> Subir Archivo
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </>
   );
 };
 

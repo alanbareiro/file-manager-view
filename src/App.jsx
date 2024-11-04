@@ -23,9 +23,9 @@ const App = () => {
       <MainLayout>
         <Routes>
           {/* Si no coincide ninguna ruta, redirige a /register */}
-          <Route path="*" element={<Navigate to="/login" replace />} />
           {/* Ruta por defecto: redirige a /register */}
-          <Route path="/" element={<Navigate to="/login" replace />} />
+          <Route path="*" element={<ProtectedRoutes> <Home /> </ProtectedRoutes>} />
+          <Route path="/" element={<ProtectedRoutes> <Home /> </ProtectedRoutes>} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
 

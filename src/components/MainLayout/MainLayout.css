@@ -27,3 +27,8 @@
     background-color: #f0f2f5;
   }
   
+  @media (max-width: 768px) {
+    .content {
+      margin-left: 0px; /* Ajusta el contenido principal para dejar espacio al sidebar */
+    }
+  }

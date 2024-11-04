@@ -20,13 +20,8 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-logo">
         <Link to={user ? '/dashboard' : 'login'} style={{ display: 'flex', alignItems: 'center', color: 'inherit', textDecoration: 'none' }}>
-          {/* <FaClipboardList size={32} style={{ marginRight: '8px' }} /> Icono en lugar del logo */}
-          {/* File */}
-          {/* <div  className='navbar-logo'> */}
           <img src={logo_mod_bgt} alt='File Manager' />
           <p>File Manager</p>
-
-          {/* </div> */}
         </Link>
       </div>
       <ul className="navbar-links">
