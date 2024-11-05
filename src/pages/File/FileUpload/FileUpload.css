@@ -1,80 +1,115 @@
-/* FileUpload.css */
-
 .file-upload {
-    max-width: 500px;
-    margin: 2rem auto;
-    padding: 2rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    text-align: center;
+  max-width: 750px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.file-upload h3 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.file-upload input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 1rem;
+}
+
+.file-upload input[type="file"]:hover {
+  background-color: #eaeaea;
+}
+
+.file-upload h4 {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 1.5rem 0 0.5rem;
+  font-weight: 500;
+}
+
+.file-upload label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #333;
+  text-align: left;
+}
+
+.file-upload select {
+  display: block;
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f4f4f4;
+  margin-top: 0.3rem;
+  cursor: pointer;
+}
+
+.file-upload label input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.file-upload button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.file-upload button:hover {
+  background-color: #0056b3;
+}
+
+.file-upload p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #28a745;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .file-upload {
+    padding: 1.5rem;
+    margin: 1.5rem auto;
   }
-  
+
   .file-upload h3 {
-    margin-bottom: 1.5rem;
-    font-size: 1.8rem;
-    color: #333;
+    font-size: 1.4rem;
   }
-  
-  .file-upload input[type="file"] {
-    margin-bottom: 1rem;
-    display: block;
-    width: 100%;
-    padding: 8px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  
-  .file-upload h4 {
-    margin-top: 1.5rem;
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
-  .file-upload label {
-    display: block;
-    margin: 0.5rem 0;
-    font-size: 1rem;
-    color: #333;
-    text-align: left;
-  }
-  
-  .file-upload label input[type="text"] {
-    display: block;
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.3rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .file-upload label input[type="checkbox"] {
-    margin-right: 0.5rem;
-  }
-  
+
+  .file-upload input[type="file"],
+  .file-upload select,
   .file-upload button {
-    margin-top: 1rem;
-    padding: 0.8rem 1.5rem;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 0.9rem;
   }
-  
-  .file-upload button:hover {
-    background-color: #0056b3;
-  }
-  
+
   .file-upload p {
-    margin-top: 1rem;
-    font-size: 1rem;
-    color: #28a745;
+    font-size: 0.9rem;
   }
-  
+
+
+}

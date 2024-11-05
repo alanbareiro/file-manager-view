@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FaUserMd, FaCalendarAlt, FaHistory } from 'react-icons/fa';
+import { FaUser, FaCloud, FaHistory } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import Card from '../../components/Card';
 import './Home.css';
@@ -48,20 +48,20 @@ const Home = () => {
           title="Usuarios"
           description={`Cantidad de Usuarios: ${users}`}
           onClick={() => navigate('/user')}
-          icon={<FaUserMd size={48} className="card-icon" />}
+          icon={<FaUser size={48} className="card-icon" />}
         />
         <Card
           title="Archivos"
-          description={`Cantidad de Archivos: ${filesLength}`}
+          description={`Archivos en la nube: ${filesLength}`}
           onClick={() => navigate('/file')}
-          icon={<FaCalendarAlt size={48} className="card-icon" />}
+          icon={<FaCloud size={48} className="card-icon" />}
         />
-        <Card
+        {/* <Card
           title="Archivos compartidos"
           description={`Cantidad de Archivos compartidos: ${sharedLength}`}
           onClick={() => navigate('/file/shared')}
           icon={<FaHistory size={48} className="card-icon" />}
-        />
+        /> */}
       </div>
     </>
   );

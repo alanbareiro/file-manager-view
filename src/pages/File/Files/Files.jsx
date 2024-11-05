@@ -29,11 +29,6 @@ const Files = () => {
     }
   };
 
-  // // Open file in a new tab (assuming it's viewable in the browser)
-  // const openFile = (fileId) => {
-  //   window.open(`${API_BASE_URL}/file/view/${fileId}`, '_blank');
-  // };
-
   // Delete file
   const deleteFile = async (fileId) => {
     try {
@@ -59,11 +54,10 @@ const Files = () => {
           <tbody>
             {files.map((file) => (
               <tr key={file.id}>
-                <td>{file.filename}</td>
-                <td>{file.mimetype}</td>
-                <td>
+                <td data-label="Nombre de Archivo">{file.filename}</td>
+                <td data-label="Tipo MIME">{file.mimetype}</td>
+                <td data-label="Acciones">
                   <button onClick={() => downloadFile(file.id)} className="download-button">Descargar</button>
-                  {/* <button onClick={() => openFile(file.id)} className="open-button">Abrir</button> */}
                   <button onClick={() => deleteFile(file.id)} className="delete-button">Eliminar</button>
                 </td>
               </tr>
@@ -78,4 +72,3 @@ const Files = () => {
 };
 
 export default Files;
-
